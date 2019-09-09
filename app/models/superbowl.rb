@@ -1,0 +1,2 @@
+class Superbowl < ApplicationRecord
+end
