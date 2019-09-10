@@ -12,9 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2019_09_09_223805) do
 
-  create_table "superbowls", force: :cascade do |t|
+  create_table "sb", force: :cascade do |t|
     t.string "year"
-    t.string "score"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
