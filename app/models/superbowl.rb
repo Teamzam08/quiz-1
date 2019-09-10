@@ -1,2 +1,2 @@
-class Superbowl < ApplicationRecord
+class Superbowl < ApplicationRecord 
 end

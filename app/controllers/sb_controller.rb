@@ -1,5 +1,5 @@
 class SbController < ApplicationController
     def index
-        @superbowl=Superbowl.first
+        @superbowl = Superbowl.inspect
     end
 end
