@@ -10,10 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_09_223805) do
+ActiveRecord::Schema.define(version: 2019_09_10_213644) do
 
-  create_table "sb", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+
+  create_table "superbowls", force: :cascade do |t|
     t.string "year"
+    t.string "score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
