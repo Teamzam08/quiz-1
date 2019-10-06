@@ -1,0 +1,10 @@
+<h1>Let's hear it!</h1>
+<%= simple_form_for @message do |f| %>
+	<div class="col-8 offset-2">
+		<%= f.input :comment %>
+		<br />
+		<%= f.submit 'Create', class: 'btn btn-danger' %>
+		<%= link_to 'Home', root_path, class: 'btn btn-danger' %>
+	</div>
+<% end %>
+
